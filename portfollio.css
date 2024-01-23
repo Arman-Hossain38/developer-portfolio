@@ -172,10 +172,56 @@ font-weight: 400;
     margin-bottom: 25px;
     padding: 18px 30px;
     border: none;
-    width: 461px;
+    width: 100%;
     border-radius: 5px;
     background:  #FFF;
     resize: none;
  }
 
 /* footer-section end */
+
+.hide{
+    display: none;
+}
+@media  screen and (max-width: 576px) {
+    .header{
+        background-image: none;
+    }
+    .banner .banner-profile{
+        width: 100%;
+    }
+    .btn-primary{
+        display: block;
+        margin-bottom: 20px;
+    }
+    nav > ul{
+        gap: 10px;
+    }
+
+ nav, .banner, nav > ul, .skills-container, .resume-container, footer, .about-info{
+   flex-direction: column;
+}
+.what-i-do, .banner{
+    padding: 20px;
+}
+footer, .about{
+    padding: 10px;
+}
+.footer-column{
+    width: 100%;
+}
+.contact input[type="text"], .contact input[type="email"], textarea{
+    width: 80%;
+}
+
+
+}
+
+@media screen and (min-width: 576) and (max-width: 960px) {
+        footer{
+            padding: 30px;
+        }
+        .btn-primary{
+            margin-bottom: 20px;
+        }
+}
